@@ -9,7 +9,7 @@ for i in range(100):
     time.sleep(0.1)
     pro_bar.progress(i)  # ←ここにコードを追記
 
-st.balloons()
+
 
 # ---------- st.progress() ----------
-st.  # ←ここにコードを追記
+st.balloons()  # ←ここにコードを追記
