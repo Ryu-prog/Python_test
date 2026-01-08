@@ -2,6 +2,13 @@ import streamlit as st
 import spacy
 from spacy import displacy
 
+model_name = "ja_core_news_sm"
+try:
+    nlp = spacy.load(model_name)
+except OSError:
+    subprocess.run([sys.executable, "-m", "spacy", "download", model_name])
+    nlp = spacy.load(model_name)
+
 st.sidebar.title("文章解析アプリ")
 st.sidebar.write("SpaCyを使って文章を解析します。")
 
