@@ -2,6 +2,7 @@ import streamlit as st
 import spacy
 from spacy import displacy
 import sys
+import subprocess
 
 model_name = "ja_core_news_sm"
 try:
